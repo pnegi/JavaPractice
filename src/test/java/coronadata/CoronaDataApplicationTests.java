@@ -1,4 +1,4 @@
-package nice;
+package coronadata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class CoronaDataApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() { // default implementation ignored
 	}
 
 }
