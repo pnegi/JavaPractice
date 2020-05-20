@@ -6,13 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class coronaEntity {
+public class CoronaEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private String firstName;
 
-    public coronaEntity(int id, String firstName, String lastName) {
+    public CoronaEntity(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

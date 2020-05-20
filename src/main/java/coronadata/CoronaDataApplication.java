@@ -1,7 +1,7 @@
 package coronadata;
 
-import coronadata.model.coronaEntity;
-import coronadata.repository.coronaRepository;
+import coronadata.model.CoronaEntity;
+import coronadata.repository.CoronaRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,8 +13,8 @@ public class CoronaDataApplication {
 		SpringApplication.run(CoronaDataApplication.class, args);
 	}
 
-	public CommandLineRunner demo(coronaRepository coronaRepository){
-		return args -> coronaRepository.save(new coronaEntity(1, "Jack", "Bauer"));
+	public CommandLineRunner demo(CoronaRepository coronaRepository){
+		return args -> coronaRepository.save(new CoronaEntity(1, "Jack", "Bauer"));
 
 	}
 
