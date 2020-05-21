@@ -27,7 +27,7 @@ public class CoronaController {
         // validate file
         if (file.isEmpty()) {
             log.info("Please select a CSV file to upload.");
-            responseEntity = ResponseEntity.status(HttpStatus.OK).body("Please select a CSV file to upload.");
+            responseEntity = ResponseEntity.status(HttpStatus.NO_CONTENT).body("Please select a CSV file to upload.");
         } else {
             // parse CSV file to create a list of `CoronaDto` objects
             try (Reader reader = new BufferedReader(new InputStreamReader(file.getInputStream()))) {
