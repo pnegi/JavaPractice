@@ -19,6 +19,13 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+//	compile gr	§oup: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+	compileOnly 'org.projectlombok:lombok:1.18.12'
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.3.0.RELEASE'
+	compile group: 'com.opencsv', name: 'opencsv', version: '4.0'
+
+
 }
 
 test {
